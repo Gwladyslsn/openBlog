@@ -1,5 +1,2 @@
 # Ignore MySQL socket et fichiers temporaires
-mysql/
-*.sock
-*.pid
-*.log
+/mysql/
