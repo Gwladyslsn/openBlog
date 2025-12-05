@@ -1,13 +1,5 @@
 services:
 
-  openblog:
-    build:
-      context: ./php
-    container_name: openblog
-    ports:
-      - 8080:80
-    depends_on:
-      - database
   database:
     container_name: database
     image: mysql:8.0
@@ -36,7 +28,7 @@ services:
       - database
   phpma:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpma-openblog
     environment:
       PMA_ARBITRARY: 1
       PMA_HOST: database
