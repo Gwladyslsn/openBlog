@@ -11,8 +11,9 @@ final class MainController extends AbstractController
     #[Route('/', name: 'app_main')]
     public function index(): Response
     {
+        $prenoms = ['Gwladys', 'Jean', 'Kevin'];
         return $this->render('main/index.html.twig', [
-            'prenom' => 'Gwld',
+            'prenoms' => $prenoms
         ]);
     }
 

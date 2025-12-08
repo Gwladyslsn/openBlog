@@ -1,2 +1,3 @@
 # Ignore MySQL socket et fichiers temporaires
 /mysql/
+etc/
